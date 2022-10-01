@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('users',function(){
+	return ['Ken','Mike','John','Lisa'];	
+});
+Route::get('/users',function(){
+	return App\User::all();
+});
