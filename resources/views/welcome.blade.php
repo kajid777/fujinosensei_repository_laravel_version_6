@@ -9,8 +9,8 @@
 <body>
 
     <div id="app">
-        <example-component></example-component>
-        
+        <user-component></user-component>
+        <problem-component></problem-component>
     </div>
 
 

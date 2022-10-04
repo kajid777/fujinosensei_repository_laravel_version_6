@@ -14,9 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('users',function(){
-	return ['Ken','Mike','John','Lisa'];	
+Route::get('/problems',function(){
+    // $kari=App\Models\problem::all();
+    // dd($kari);
+	return App\Models\problem::all();
 });
 Route::get('/users',function(){
-	return App\User::all();
+	return App\Models\user::all();
+	
 });
