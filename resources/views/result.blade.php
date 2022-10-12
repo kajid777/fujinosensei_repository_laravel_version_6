@@ -12,26 +12,12 @@
     
     <div id="app">
         
-        <p v-for="user in users">{{ user.id }}</p>
+        
     </div>
     
     <script src="{{ mix('js/app.js') }}"></script>
     <script>
-        new Vue({
-            el:"#app",
-            data:{
-                users: [],
-                problems: []
-            },
-            
-            
-            mounted:function(){
-                axios.get('/users').then(response => this.users = response.data)
-                axios.get('/problems').then(response => this.problems = response.data)
-                
-            }
-            
-        })
+        
     </script>
 </body>
 </html>
