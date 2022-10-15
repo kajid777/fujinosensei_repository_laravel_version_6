@@ -23,4 +23,5 @@ Route::get('/users',function(){
 	
 });
 
+
 // Route::get('/part/{content_number}', 'ChapterController@show');
